@@ -63,7 +63,6 @@ Route::get('/entrada',function(){
 	return view ('entrada');
 });
 
-//Route::get('/','App\Http\Controllers\PortalController@index');
-
 Route::get('/listar-equipas','PortalController@listarEquipas');
 
+Route::get('/listar-equipas/{chave}','PortalController@listarEquipa');
